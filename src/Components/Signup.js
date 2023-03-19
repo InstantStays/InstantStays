@@ -15,6 +15,7 @@ const Signup = () => {
               heading="Sign Up"
               text="Enter your details below"
               signUpText="Sign up via Google"
+              signupfb="Sign up via Facebook"
             />
             <SignupBtn>Sign up!</SignupBtn>
           </SignupRight>

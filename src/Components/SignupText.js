@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BsGoogle } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const SignupText = (props) => {
@@ -13,8 +14,8 @@ const SignupText = (props) => {
         <h4>{props.signUpText}</h4>
       </SignUpGoogle>
       <SignUpFacebook>
-        <BsGoogle />
-        <h4>{props.signUpText}</h4>
+        <BsFacebook />
+        <h4>{props.signupfb}</h4>
       </SignUpFacebook>
       <hr
         style={{
@@ -56,7 +57,7 @@ const SignUpGoogle = styled.div`
   padding: 10px;
   border-radius: 15px;
   gap: 0.75rem;
-  width: 13rem;
+  width: 14rem;
   transition: all 300ms ease-in;
   cursor: pointer;
   :hover {

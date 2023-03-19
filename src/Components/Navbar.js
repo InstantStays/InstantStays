@@ -33,10 +33,10 @@ const Navbar = () => {
         ></AiFillCloseCircle>
         <LoginSignUp>
           <Link to="/login" id="login">
-            <Login>Login Test</Login>
+            <Login>Login</Login>
           </Link>
           <Link to="/signup" id="signup">
-            <Signup>Sign Up Test</Signup>
+            <Signup>Sign Up</Signup>
           </Link>
         </LoginSignUp>
       </NavbarMenu>
