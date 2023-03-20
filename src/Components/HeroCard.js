@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import data from "./data";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from "react-responsive-carousel";
@@ -13,13 +14,15 @@ const HeroCard = (props) => {
             {data.cardData.map((item, index) => {
               return (
                 <div id="maindiv">
-                  <CardBody>
-                    <img src={item.img} alt="" />
-                    <div className="info">
-                      <h3>{item.title}</h3>
-                      <p>Card Description</p>
-                    </div>
-                  </CardBody>
+                  <Link to="/" target="_blank">
+                    <CardBody>
+                      <img src={item.img} alt="" />
+                      <div className="info">
+                        <h3>{item.title}</h3>
+                        <p>Card Description</p>
+                      </div>
+                    </CardBody>
+                  </Link>
                 </div>
               );
             })}
@@ -37,6 +40,7 @@ const Container = styled.div`
 `;
 const Cards = styled.div``;
 const Card = styled.div`
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

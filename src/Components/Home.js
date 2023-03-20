@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import data from "./data";
 import { Link } from "react-router-dom";
 import { BsHouseDoorFill } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 import HeroCard from "./HeroCard";
 
 const Home = () => {
@@ -10,13 +12,15 @@ const Home = () => {
       <Container>
         <MainContainer>
           <RowOne>
-            <input
-              id="searchInput"
-              type="text"
-              placeholder="Search destination..."
-            />
+            <Link to="/searchbar">
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="Search destination..."
+              />
+            </Link>
             <Link
-              to="/"
+              to="/register"
               style={{ width: "100%", display: "flex", textDecoration: "none" }}
             >
               <Btn>
@@ -75,24 +79,30 @@ const MainContainer = styled.div`
 `;
 const RowOne = styled.div`
   display: grid;
+  align-items: center;
   grid-template-columns: 9fr 3fr;
-  grid-gap: 8rem;
+  grid-gap: 4rem;
   :first-child {
     justify-items: flex-end;
   }
   :nth-child(2) {
     justify-items: flex-start;
   }
-  input {
+  a {
     width: 80%;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    padding: 0 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-    ::placeholder {
-      color: #000;
+    height: fit-content;
+    input {
+      width: 100%;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      padding: 1rem;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      ::placeholder {
+        color: #000;
+        padding-left: 5px;
+      }
     }
   }
 `;
