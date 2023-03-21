@@ -23,20 +23,27 @@ const Card = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.2rem;
-  padding: 2rem;
-  border: 2px solid #873309;
+  gap: 1.4rem;
+  padding: 2.5rem 2rem;
+  border: 3px solid #873309;
   border-radius: 20px;
   overflow: hidden;
   height: 350px;
   width: 300px;
+  transition: all 300ms ease;
   h2 {
     font-size: 1.7rem;
     border-bottom: 2px solid #fff;
     padding: 0 0 10px 0;
   }
   p {
+    font-size: 0.95rem;
     line-height: 1.2;
     text-align: left;
+  }
+  :hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+    cursor: pointer;
   }
 `;

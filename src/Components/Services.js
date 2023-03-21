@@ -69,7 +69,7 @@ const Cards = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem 0; 
 `;
 // rgb(239, 2, 2)
 // background: linear-gradient(152deg, rgba(208,119,15,0.96) 0%, rgba(210,126,27,0) 100%);
