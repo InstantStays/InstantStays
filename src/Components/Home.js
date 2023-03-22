@@ -28,7 +28,7 @@ const Home = () => {
                   <BsHouseDoorFill />
                   Register Place
                 </button>
-              </Btn>
+              </Btn> 
             </Link>
           </RowOne>
           {isAuthenticated ? (

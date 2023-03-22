@@ -1,4 +1,4 @@
-[ 
+[  
     {
       "author": "Chinua Achebe",
       "country": "Nigeria",
@@ -88,13 +88,13 @@
       "pages": 443,
       "title": "Le P\u00e8re Goriot",
       "year": 1835
-    },
+    }, 
     {
       "author": "Samuel Beckett",
       "country": "Republic of Ireland",
       "imageLink": "images/molloy-malone-dies-the-unnamable.jpg",
       "language": "French, English",
-      "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
+      "link": "/services", 
       "pages": 256,
       "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
       "place": "Place 1",
