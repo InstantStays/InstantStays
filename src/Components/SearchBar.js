@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
+import { BsFillStarFill } from "react-icons/bs";
 import data from "./DATA.json";
 //https://jsonplaceholder.typicode.com/posts
 
@@ -47,7 +48,31 @@ const SearchBar = () => {
               {filteredData.map((value, key) => {
                 return (
                   <Link to={value.link} target="_blank">
-                    <p>{value.title}</p>
+                    <SearchedCard>
+                      {/* <p>{value.title}</p> */}
+                      <img src={value.image} alt="" />
+                      <Content>
+                        <Row>
+                          <h3>{value.place}</h3>
+                          <div
+                            style={{
+                              display: "flex",
+                              gap: "0.75rem",
+                              alignItems: "center",
+                              fontSize: "1.4rem",
+                            }}
+                          >
+                            <BsFillStarFill
+                              style={{ transform: "scale(1.1)" }}
+                            />
+                            <strong>4.3</strong>
+                          </div>
+                        </Row>
+                        <RowTwo>
+                          <strong>{value.rate}</strong>
+                        </RowTwo>
+                      </Content>
+                    </SearchedCard>
                   </Link>
                 );
               })}
@@ -62,13 +87,15 @@ const SearchBar = () => {
 export default SearchBar;
 const Container = styled.div`
   width: 100%;
-  padding: 6rem 4rem;
+  height: 100vh;
+  padding: 2rem 4rem 6rem 4rem;
   background-color: #000;
+  overflow-x: hidden;
 `;
 const MainContainer = styled.div`
   width: 100%;
   /* background: linear-gradient(
-    155.82deg,
+    155.82deg, 
     rgba(235, 101, 7, 0.864107) 0%,
     #ff6900 0%,
     #ff6900 0.01%,
@@ -104,10 +131,54 @@ const SearchBarInput = styled.div`
 `;
 const Dropdown = styled.div``;
 const DataShow = styled.div`
+  display: grid;
+  margin: 4rem 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 4rem 1rem;
+  overflow: hidden;
   a {
     text-decoration: none;
     color: #fff;
     text-align: center;
     padding: 10px;
+    transition: all 0.3s ease-out;
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+`;
+const SearchedCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #fff;
+  width: 400px;
+  height: 500px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+`;
+const Content = styled.div`
+  margin: 0.75rem 0;
+`;
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  h3 {
+    font-size: 1.6rem;
+  }
+  div {
+    strong {
+      font-size: 1.1rem;
+    }
+  }
+`;
+const RowTwo = styled.div`
+  strong {
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
   }
 `;

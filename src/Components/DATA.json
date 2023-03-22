@@ -58,7 +58,7 @@
       "pages": 288,
       "title": "One Thousand and One Nights",
       "year": 1200
-    },
+    }, 
     {
       "author": "Unknown",
       "country": "Iceland",
@@ -97,6 +97,9 @@
       "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
       "pages": 256,
       "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "place": "Place 1",
+      "rate": "₹ 500 for 1d/1n",
+      "image": "https://www.clipartmax.com/png/small/180-1809318_picture-300-x-300-pixel.png",
       "year": 1952
     },
     {
@@ -367,6 +370,9 @@
       "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
       "pages": 368,
       "title": "Love in the Time of Cholera",
+      "place": "Place 2",
+      "image": "../Images/img1.jpg",
+      "rate": "₹ 550 for 1d/1n",
       "year": 1985
     },
     {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { BsStar } from "react-icons/bs";
 import data from "./data";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from "react-responsive-carousel";
@@ -18,7 +19,18 @@ const HeroCard = (props) => {
                     <CardBody>
                       <img src={item.img} alt="" />
                       <div className="info">
-                        <h3>{item.title}</h3>
+                        <RowOne>
+                          <h2>{item.title}</h2>
+                          <p
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                            }}
+                          >
+                            <BsStar />
+                            <strong style={{ marginLeft: "10px" }}>4.3</strong>
+                          </p>
+                        </RowOne>
                         <p>Card Description</p>
                       </div>
                     </CardBody>
@@ -47,24 +59,38 @@ const Card = styled.div`
   justify-content: center;
   gap: 2rem;
   #maindiv {
-    overflow: hidden;
+    // overflow: hidden;
+    border-radius: 20px;
   }
 `;
 const CardBody = styled.div`
   position: relative;
-  height: 270px;
+  // height: 270px;
+  height: 380px;
   width: 300px;
   border: 2px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+
   img {
     width: 100%;
     opacity: 0.8;
   }
   .info {
     position: absolute;
-    color: grey;
+    width: 100%;
+    color: #fff;
     bottom: 5%;
-    left: 10%;
+    left: 0%;
+    p {
+      margin: 0 1rem;
+    }
   }
+`;
+const RowOne = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
 `;
 
 /* <div>

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import data from "./data";
 import { Link } from "react-router-dom";
 import { BsHouseDoorFill } from "react-icons/bs";
-import { BsSearch } from "react-icons/bs";
 import HeroCard from "./HeroCard";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Home = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
   return (
     <>
       <Container>
@@ -31,9 +31,18 @@ const Home = () => {
               </Btn>
             </Link>
           </RowOne>
-          <RowTwo>
-            <h2>Hello, Ved</h2>
-          </RowTwo>
+          {isAuthenticated ? (
+            <RowTwo>
+              <h2>Hello {user.name}</h2>
+            </RowTwo>
+          ) : (
+            <RowTwo>
+              <h2>Hello Guest</h2>
+            </RowTwo>
+          )}
+          {/*<RowTwo>
+            <h2>Hello </h2>
+          </RowTwo>*/}
           <RowThree>
             <HeroCard />
           </RowThree>
