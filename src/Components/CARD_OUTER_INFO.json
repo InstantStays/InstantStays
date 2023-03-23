@@ -1,0 +1,107 @@
+[
+    {
+        "location":"Nagpur",
+        "image":"https://yatradham.org/media/catalog/product/cache/1/thumbnail/f1c7696c61231c9bf5d4a8ab9a7e3c9f/1/1/11_2_1.jpg",
+        "place_name":"Maa Umiya Dham",
+        "rating":"4.6",
+        "price":"₹1200 night"
+    },  
+    {
+        "location":"Nagpur",
+        "image":"https://images.unsplash.com/photo-1609151745346-c624e507baa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hyaSUyMHZpc2FsYWQlMjB2YW5payUyMHNhbWFqJTIwYmhhdmFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "place_name":"Shri Visalad Vanik Samaj Bhavan",
+        "rating":"4.5",
+        "price":"₹900 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://yatradham.org/media/catalog/product/cache/1/thumbnail/f1c7696c61231c9bf5d4a8ab9a7e3c9f/j/a/jalaram_dormitory_nagpur_3_.jpg",
+        "place_name":"Hotel Jalaram Dormitory",
+        "rating":"4.4",
+        "price":"₹989 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://yatradham.org/media/catalog/product/cache/1/thumbnail/f1c7696c61231c9bf5d4a8ab9a7e3c9f/s/a/saurashtra_dasha_shrimali_vanik_sangh_nagpur_12_.jpg",
+        "place_name":"Shri Saurastra Dasha Shrimali Vanik Sangh",
+        "rating":"4.9",
+        "price":"₹1500 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://yatradham.org/media/catalog/product/cache/1/thumbnail/f1c7696c61231c9bf5d4a8ab9a7e3c9f/g/u/gujarat_hotel_nagpur_18_.jpg",
+        "place_name":"YD Stay",
+        "rating":"4.5",
+        "price":"₹1100 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://a0.muscache.com/im/pictures/860c847b-035a-4fe5-8aaf-f4a5c8436b05.jpg?im_w=1200",
+        "place_name":"Colorful Bliss",
+        "rating":"4.6",
+        "price":"₹959 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://a0.muscache.com/im/pictures/miso/Hosting-747071043065990104/original/4d618862-af00-4d76-95d8-ba88b6546b7b.png?im_w=1200",
+        "place_name":"Casa particular",
+        "rating":"4.8",
+        "price":"₹2600 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://a0.muscache.com/im/pictures/miso/Hosting-777298479510186678/original/b77a1123-ab05-4bc8-b734-08484cf1880c.jpeg?im_w=720",
+        "place_name":"Avame Rooms",
+        "rating":"4.5",
+        "price":"₹1400 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://a0.muscache.com/im/pictures/c180c539-e845-41bc-9f47-1f4a88b63401.jpg?im_w=720",
+        "place_name":"Pathak guest house",
+        "rating":"3.9",
+        "price":"₹830 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://a0.muscache.com/im/pictures/e48eb42d-aa54-4e22-a3e6-ff8428021968.jpg?im_w=720",
+        "place_name":"SANJOG Home",
+        "rating":"4.2",
+        "price":"₹855 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://images.oyoroomscdn.com/uploads/hotel_image/183688/large/b4f4c83b3d5c227e.jpg",
+        "place_name":"Townhouse 1040 Hotel Md Star",
+        "rating":"5.0",
+        "price":"₹1075 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://images.oyoroomscdn.com/uploads/hotel_image/186785/large/8311a5e652c01cb8.jpg",
+        "place_name":"Hotel Sunshine Inn",
+        "rating":"4.1",
+        "price":"₹599 night"
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://images.oyoroomscdn.com/uploads/hotel_image/58668/large/fc5d46407f42b560.JPG",
+        "place_name":"Silver Apartments",
+        "rating":"3.3",
+        "price":"₹666 night" 
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://images.oyoroomscdn.com/uploads/hotel_image/199736/large/8fd6b6dbfe10e0ad.jpg",
+        "place_name":"Gaurav Guest House",
+        "rating":"3.2",
+        "price":"₹590 night" 
+    },
+    {
+        "location":"Nagpur",
+        "image":"https://images.oyoroomscdn.com/uploads/hotel_image/193393/large/88f0e2e6a05055c5.jpg",
+        "place_name":"Hotel The Silver Nest",
+        "rating":"3.2",
+        "price":"₹1725 night" 
+    }
+] 

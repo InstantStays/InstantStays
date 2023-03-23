@@ -14,20 +14,25 @@ const Services = () => {
         </Desc>
         <Cards>
           <ServiceCard
+            icon="<BsFillCalendarCheckFill/>"
             heading="Anytime Booking"
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium incidunt provident omnis eveniet tempora quia aperiam repellendus at assumenda."
+            para="InstantStays provides anytime booking service which is a convenient way to reserve services or products at any time, without being limited to specific hours or days."
           />
           <ServiceCard
-            heading="Anytime Booking"
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium incidunt provident omnis eveniet tempora quia aperiam repellendus at assumenda."
+            heading="Accommodation at Minimal Cost"
+            para="Free lodging service is a fantastic option for those who want to travel or need a temporary place to stay without breaking the bank."
           />
           <ServiceCard
-            heading="Anytime Booking"
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium incidunt provident omnis eveniet tempora quia aperiam repellendus at assumenda."
+            heading="Deterring Scams"
+            para="InstantStays is a reputable and established hotel website. We have legitimate reviews by users which make it possible to reserve a suitable hotel. "
           />
           <ServiceCard
-            heading="Anytime Booking"
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium incidunt provident omnis eveniet tempora quia aperiam repellendus at assumenda."
+            heading="Exposure to unexplored rest houses"
+            para="InstantStays provides an exposure to unexplored rest houses. We have the information of hotels that are located in remote and rural areas."
+          />
+          <ServiceCard
+            heading="Commercial Exposure"
+            para="InstantStays provides a commercial exposure to the user."
           />
         </Cards>
       </Container>
@@ -69,7 +74,7 @@ const Cards = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 2rem 0; 
+  margin: 2rem 0;
 `;
 // rgb(239, 2, 2)
 // background: linear-gradient(152deg, rgba(208,119,15,0.96) 0%, rgba(210,126,27,0) 100%);

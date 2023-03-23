@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
+import { BsCashCoin } from "react-icons/bs";
 
-const ServiceCard = (props) => {
+const ServiceCard = (props, { Icon }) => {
   return (
     <>
       <Container>
         <Card>
-          <BsFillCalendarCheckFill style={{ transform: "scale(2)" }} />
+          {/* <BsFillCalendarCheckFill style={{ transform: "scale(2)" }} /> */}
+          <div>{Icon}</div>
           <h2>{props.heading}</h2>
           <p>{props.para}</p>
         </Card>
@@ -37,13 +39,12 @@ const Card = styled.div`
     padding: 0 0 10px 0;
   }
   p {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     line-height: 1.2;
     text-align: left;
   }
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     border: 2px solid black;
-    cursor: pointer;
   }
 `;

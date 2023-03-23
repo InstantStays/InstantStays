@@ -60,7 +60,12 @@ const Card = styled.div`
   gap: 2rem;
   #maindiv {
     // overflow: hidden;
+    transition: all 250ms ease;
     border-radius: 20px;
+    :hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #fff;
+    }
   }
 `;
 const CardBody = styled.div`

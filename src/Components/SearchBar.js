@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
-import data from "./DATA.json";
+// import data from "./DATA.json";
+import OpenCardData from "./CARD_OUTER_INFO.json";
 //https://jsonplaceholder.typicode.com/posts
 
 const SearchBar = () => {
@@ -11,8 +12,8 @@ const SearchBar = () => {
   const [wordEntered, setWordEntered] = useState("");
   const handleFilter = (event) => {
     const searchWord = event.target.value;
-    const newFilter = data.filter((value) => {
-      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    const newFilter = OpenCardData.filter((value) => {
+      return value.location.toLowerCase().includes(searchWord.toLowerCase());
     });
     if (searchWord === "") {
       setFilteredData([]);
@@ -53,7 +54,7 @@ const SearchBar = () => {
                       <img src={value.image} alt="" />
                       <Content>
                         <Row>
-                          <h3>{value.place}</h3>
+                          <h3>{value.place_name}</h3>
                           <div
                             style={{
                               display: "flex",
@@ -65,13 +66,16 @@ const SearchBar = () => {
                             <BsFillStarFill
                               style={{ transform: "scale(1.1)" }}
                             />
-                            <strong>4.3</strong>
+                            <strong>{value.rating}</strong>
                           </div>
                         </Row>
-                        <RowTwo>
+                        {/* <RowTwo>
                           <strong>{value.rate}</strong>
-                        </RowTwo>
+                        </RowTwo> */}
                       </Content>
+                      <Price>
+                        <h3>{value.price}</h3>
+                      </Price>
                     </SearchedCard>
                   </Link>
                 );
@@ -91,6 +95,10 @@ const Container = styled.div`
   padding: 2rem 4rem 6rem 4rem;
   background-color: #000;
   overflow-x: hidden;
+  position: fixed;
+  @media screen and (max-width: 516px) {
+    padding: 2rem 2rem 4rem 2rem;
+  }
 `;
 const MainContainer = styled.div`
   width: 100%;
@@ -107,7 +115,8 @@ const MainContainer = styled.div`
   border-radius: 25px;
   // height: 100vh;
   display: block;
-  padding: 3rem 0;
+  // padding: 3rem 0;
+  margin: 3rem 0;
 `;
 const SearchBarInput = styled.div`
   display: flex;
@@ -116,7 +125,7 @@ const SearchBarInput = styled.div`
   gap: 2.5rem;
   padding-left: 5px;
   input {
-    width: 40%;
+    width: 80%;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -128,6 +137,13 @@ const SearchBarInput = styled.div`
       padding-left: 5px;
     }
   }
+  @media screen and (max-width: 881px) {
+    input {
+      ::placeholder {
+        padding-left: 0px;
+      }
+    }
+  }
 `;
 const Dropdown = styled.div``;
 const DataShow = styled.div`
@@ -137,6 +153,7 @@ const DataShow = styled.div`
   justify-items: center;
   gap: 4rem 1rem;
   overflow: hidden;
+  padding: 2rem 0;
   a {
     text-decoration: none;
     color: #fff;
@@ -144,29 +161,43 @@ const DataShow = styled.div`
     padding: 10px;
     transition: all 0.3s ease-out;
     :hover {
-      transform: scale(1.1);
+      transform: scale(1.04);
     }
+  }
+  @media screen and (max-width: 1270px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 881px) {
+    grid-template-columns: 1fr;
   }
 `;
 const SearchedCard = styled.div`
   display: flex;
   flex-direction: column;
   border: 2px solid #fff;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 425px;
+  gap: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 250ms ease;
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
+  }
+  :hover {
+    box-shadow: 0 0 20px 5px #fff;
   }
 `;
 const Content = styled.div`
-  margin: 0.75rem 0;
+  margin: 0.75rem 10px;
 `;
 const Row = styled.div`
   display: flex;
-  justify-content: space-between;
-  margin: 0 1rem;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
   h3 {
     font-size: 1.6rem;
   }
@@ -181,4 +212,7 @@ const RowTwo = styled.div`
     font-size: 1.4rem;
     letter-spacing: 1.2px;
   }
+`;
+const Price = styled.div`
+  margin: 0.75rem 0;
 `;

@@ -28,7 +28,7 @@ const Home = () => {
                   <BsHouseDoorFill />
                   Register Place
                 </button>
-              </Btn> 
+              </Btn>
             </Link>
           </RowOne>
           {isAuthenticated ? (
@@ -112,6 +112,29 @@ const RowOne = styled.div`
         color: #000;
         padding-left: 5px;
       }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    jusitfy-content: center;
+    gap: 0.5rem;
+    grid-template-columns: 8fr 6fr;
+    margin: 0 10px;
+    :first-child {
+      justify-items: flex-start;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    grid-template-columns: 8fr 6fr;
+    margin: 0 10px;
+    :first-child {
+      justify-items: center;
+    }
+    a {
+      margin: 10px 0;
     }
   }
 `;
