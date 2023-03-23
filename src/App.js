@@ -10,7 +10,7 @@ import Services from "./Components/Services";
 import Contact from "./Components/Contact";
 
 function App() {
-  return (
+  return ( 
     <>
       <Router>
         <Navbar />
