@@ -30,17 +30,17 @@ const SearchBar = () => {
       <Container>
         <MainContainer>
           <SearchBarInput>
-            <input
-              type="text"
-              placeholder="Enter place..."
-              onChange={handleFilter}
-            />
             <BsSearch
               style={{
                 color: "#fff",
                 transform: "scale(2)",
                 cursor: "pointer",
               }}
+            />
+            <input
+              type="text"
+              placeholder="Enter city..."
+              onChange={handleFilter}
             />
             <Dropdown></Dropdown>
           </SearchBarInput>
@@ -176,14 +176,14 @@ const SearchedCard = styled.div`
   flex-direction: column;
   border: 2px solid #fff;
   width: 350px;
-  height: 425px;
+  height: 450px;
   gap: 1rem;
   border-radius: 20px;
   overflow: hidden;
   transition: all 250ms ease;
   img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: fill;
   }
   :hover {

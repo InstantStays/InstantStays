@@ -8,9 +8,10 @@ import SearchBar from "./Components/SearchBar";
 import Register from "./Components/Register";
 import Services from "./Components/Services";
 import Contact from "./Components/Contact";
+import MUD from "./Components/Places/MUD";
 
 function App() {
-  return ( 
+  return (
     <>
       <Router>
         <Navbar />
@@ -22,6 +23,7 @@ function App() {
           <Route path="/searchbar" element={<SearchBar />}></Route>
           <Route path="/register" element={<Register />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/mud" element={<MUD />}></Route>
         </Routes>
       </Router>
     </>
