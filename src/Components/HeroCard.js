@@ -64,7 +64,7 @@ const Card = styled.div`
     border-radius: 20px;
     :hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px #fff;
+      box-shadow: 0 0 15px 0 #fff;
     }
   }
 `;

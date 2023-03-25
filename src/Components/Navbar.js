@@ -44,7 +44,7 @@ const Navbar = () => {
           {isAuthenticated && (
             <>
               <Info>
-                <img src={user.picture} alt="" />
+                <img src={user.picture} alt={user.name} />
                 <p style={{ color: "#000" }}>{user.name}</p>
               </Info>
             </>

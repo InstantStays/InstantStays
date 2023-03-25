@@ -41,7 +41,7 @@ const Home = () => {
           </RowOne>
           {isAuthenticated ? (
             <RowTwo>
-              <h2>Hello {user.name}</h2>
+              <h2>Hello {user?.name}</h2>
             </RowTwo>
           ) : (
             <RowTwo>
