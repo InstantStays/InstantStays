@@ -77,8 +77,11 @@ const NavbarMenu = styled.div`
   position: relative;
   height: 80px;
   overflow: hidden;
-  // background-color: rgba(255, 255, 255, 0.8);
-  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8)
+  );
   display: flex;
   align-items: center;
   justify-content: space-evenly;

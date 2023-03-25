@@ -97,7 +97,7 @@ const Container = styled.div`
   overflow-x: hidden;
   position: fixed;
   @media screen and (max-width: 516px) {
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 1rem 0 1rem;
   }
 `;
 const MainContainer = styled.div`
@@ -132,10 +132,15 @@ const SearchBarInput = styled.div`
     padding: 1rem;
     font-weight: bold;
     letter-spacing: 1.2px;
+    border: 3px solid #000;
+    transition: all 0.3s ease;
     ::placeholder {
       color: #000;
       padding-left: 5px;
     }
+  }
+  input:focus {
+    border: 3px solid #ff6900;
   }
   @media screen and (max-width: 881px) {
     input {
@@ -143,6 +148,9 @@ const SearchBarInput = styled.div`
         padding-left: 0px;
       }
     }
+  }
+  @media screen and (max-width: 415px) {
+    gap: 1.5rem;
   }
 `;
 const Dropdown = styled.div``;
@@ -170,6 +178,9 @@ const DataShow = styled.div`
   @media screen and (max-width: 881px) {
     grid-template-columns: 1fr;
   }
+  @media screen and (max-width: 415px) {
+    margin: 2rem 0;
+  }
 `;
 const SearchedCard = styled.div`
   display: flex;
@@ -188,6 +199,15 @@ const SearchedCard = styled.div`
   }
   :hover {
     box-shadow: 0 0 20px 5px #fff;
+  }
+  @media screen and (max-width: 406px) {
+    width: 300px;
+    height: 450px;
+  }
+  @media screen and (max-width: 415px) {
+    img {
+      object-fit: cover;
+    }
   }
 `;
 const Content = styled.div`

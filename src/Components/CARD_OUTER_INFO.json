@@ -5,14 +5,15 @@
         "place_name": "Maa Umiya Dham",
         "rating": "4.6",
         "price": "₹1200 night",
-        "link": "/mud"
+        "link": "/mud"  
     },
     {
         "location": "Nagpur",
         "image": "https://images.unsplash.com/photo-1609151745346-c624e507baa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hyaSUyMHZpc2FsYWQlMjB2YW5payUyMHNhbWFqJTIwYmhhdmFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "place_name": "Shri Visalad Vanik Samaj Bhavan",
         "rating": "4.5",
-        "price": "₹900 night"
+        "price": "₹900 night",
+        "link": "/svvsb" 
     },
     {
         "location": "Nagpur",
