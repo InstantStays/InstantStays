@@ -19,17 +19,25 @@ const Home = () => {
                 placeholder="Search destination..."
               />
             </Link>
-            <Link
-              to="/register"
-              style={{ width: "100%", display: "flex", textDecoration: "none" }}
-            >
-              <Btn>
-                <button>
-                  <BsHouseDoorFill />
-                  Register Place
-                </button>
-              </Btn>
-            </Link>
+            {isAuthenticated ? (
+              <Link
+                to="/register"
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  textDecoration: "none",
+                }}
+              >
+                <Btn>
+                  <button>
+                    <BsHouseDoorFill />
+                    Register Place
+                  </button>
+                </Btn>
+              </Link>
+            ) : (
+              <div></div>
+            )}
           </RowOne>
           {isAuthenticated ? (
             <RowTwo>
@@ -89,7 +97,7 @@ const MainContainer = styled.div`
 const RowOne = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: 9fr 3fr;
+  grid-template-columns: 12fr 3fr;
   grid-gap: 4rem;
   :first-child {
     justify-items: flex-end;

@@ -8,6 +8,9 @@ const Navbar = () => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
   return (
     <>
       <NavbarMenu>
@@ -36,12 +39,13 @@ const Navbar = () => {
           style={{ color: "#000", transform: "scale(2)", display: "none" }}
         ></AiFillCloseCircle>
         {/* username: motu || email: tumanemohit@gmail.com || password: Mohittumane@  */}
+        {/* username: chinmaynirwan || email: chini123@gmail.com || password: Chinimay10@  */}
         <LoginSignUp>
           {isAuthenticated && (
             <>
               <Info>
                 <img src={user.picture} alt="" />
-                <p style={{ color: "#000" }}>{user.email}</p>
+                <p style={{ color: "#000" }}>{user.name}</p>
               </Info>
             </>
           )}
@@ -103,6 +107,10 @@ const NavbarLogo = styled.div`
   img {
     width: 80px;
     scale: 3;
+    transition: all 250ms ease;
+    :hover {
+      scale: 4;
+    }
   }
 `;
 const NavbarLinks = styled.div`
