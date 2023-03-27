@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import innerData from "./MUD.json";
 import { useAuth0 } from "@auth0/auth0-react";
+import TodoWrapper from "../TodoWrapper";
 
 const MUD = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
+  const [comments, setComments] = useState([]);
+
+  const handleSubmit = () => {
+    const newComment = {
+      id: Date.now(),
+      text: "",
+      editable: false,
+    };
+    setComments([...comments, newComment]);
+  };
   return (
     <>
       <Container>
@@ -53,6 +64,15 @@ const MUD = () => {
                 <RowEight>
                   <h2>Write your own review</h2>
                 </RowEight>
+                <Review>
+                  {isAuthenticated ? (
+                    <WriteReview>
+                      <TodoWrapper />
+                    </WriteReview>
+                  ) : (
+                    <div>Login to write a comment!</div>
+                  )}
+                </Review>
               </InnerContainer>
             </>
           );
@@ -162,3 +182,5 @@ const RowSeven = styled(RowThree)``;
 const RowEight = styled.div`
   padding: 0.75rem 0;
 `;
+const Review = styled.div``;
+const WriteReview = styled.div``;
