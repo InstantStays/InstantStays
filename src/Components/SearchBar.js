@@ -3,13 +3,25 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
-// import data from "./DATA.json";
 import OpenCardData from "./CARD_OUTER_INFO.json";
+import Autocomplete from "react-autocomplete";
+// import placeinfo from "./PLACE_INFO.json";
+// import Autocomplete from "../AutoComplete";
 //https://jsonplaceholder.typicode.com/posts
 
 const SearchBar = () => {
+  // for search box suggestions
+
+  const [value, setValue] = useState("");
+
+  const [display, setDisplay] = useState(false);
+  const [search, setSearch] = useState("");
+
+  // for cards
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
+
+  // handle filter
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     const newFilter = OpenCardData.filter((value) => {
@@ -20,6 +32,9 @@ const SearchBar = () => {
     } else {
       setFilteredData(newFilter);
     }
+
+    // autocomplete
+    setValue(event.target.value);
   };
   const clearInput = () => {
     setFilteredData([]);
@@ -39,11 +54,14 @@ const SearchBar = () => {
             />
             <input
               type="text"
+              value={value}
               placeholder="Enter city..."
               onChange={handleFilter}
             />
-            <Dropdown></Dropdown>
           </SearchBarInput>
+          <Dropdown className="dropdown">
+            <button></button>
+          </Dropdown>
           {filteredData.length != 0 && (
             <DataShow>
               {filteredData.map((value, key) => {

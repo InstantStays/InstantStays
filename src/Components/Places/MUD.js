@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import innerData from "./MUD.json";
 import { useAuth0 } from "@auth0/auth0-react";
-import TodoWrapper from "../TodoWrapper";
+// import { writeJsonFile } from "write-json-file";
 
 const MUD = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -16,6 +16,14 @@ const MUD = () => {
     };
     setComments([...comments, newComment]);
   };
+
+  const dummy = async () => {
+    // await writeJsonFile("CARD_OUTER_INFO.json", { nagpur: true });
+    console.log(
+      'await writeJsonFile("CARD_OUTER_INFO.json", { nagpur: true });'
+    );
+  };
+
   return (
     <>
       <Container>
@@ -67,10 +75,14 @@ const MUD = () => {
                 <Review>
                   {isAuthenticated ? (
                     <WriteReview>
-                      <TodoWrapper />
+                      {/* <TodoWrapper place="mud" /> */}
                     </WriteReview>
                   ) : (
-                    <div>Login to write a comment!</div>
+                    <div>
+                      {" "}
+                      <strong style={{ color: "orange" }}>Login</strong> to
+                      write a comment!
+                    </div>
                   )}
                 </Review>
               </InnerContainer>

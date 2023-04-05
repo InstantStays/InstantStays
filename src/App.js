@@ -10,8 +10,19 @@ import Services from "./Components/Services";
 import Contact from "./Components/Contact";
 import MUD from "./Components/Places/MUD";
 import SVVSB from "./Components/Places/SVVSB";
+import { getDatabase, ref, set } from "firebase/database";
+import { app } from "./firebase";
+
+const db = getDatabase(app);
 
 function App() {
+  const putData = () => {
+    set(ref(db, "users/ved"), {
+      id: 1,
+      name: "Ved Nande",
+      age: 20,
+    });
+  };
   return (
     <>
       <Router>

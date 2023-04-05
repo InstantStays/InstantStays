@@ -29,13 +29,13 @@ const Todo = ({ task, deleteTodo, editTodo, toggleComplete }) => {
               <BsFillPenFill
                 icon={BsFillPenFill}
                 onClick={() => editTodo(task.id)}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", fill: "aqua" }}
               />
               <BsFillTrash3Fill
                 icon={BsFillTrash3Fill}
                 onClick={() => deleteTodo(task.id)}
-                style={{ cursor: "pointer" }}
-              /> 
+                style={{ cursor: "pointer", fill: "red" }}
+              />
             </div>
           </Second>
         </TodoCompo>
@@ -48,9 +48,13 @@ export default Todo;
 const Container = styled.div``;
 const TodoCompo = styled.div`
   transition: all 300ms ease;
+  width: fit-content;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  border: 2px solid #fff;
+  border-radius: 1.25rem;
+  padding: 1rem 2rem;
   figure {
     overflow: hidden;
     img {
@@ -67,12 +71,13 @@ const First = styled.div`
 `;
 const Second = styled.div`
   width: 100%;
-  background-color: grey;
+  // background-color: #7d7d7d;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 40px;
   padding: 0.75rem 1rem;
   div {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
 `;

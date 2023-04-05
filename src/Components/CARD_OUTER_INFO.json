@@ -4,7 +4,7 @@
         "image": "https://yatradham.org/media/catalog/product/cache/1/thumbnail/f1c7696c61231c9bf5d4a8ab9a7e3c9f/1/1/11_2_1.jpg",
         "place_name": "Maa Umiya Dham",
         "rating": "4.6",
-        "price": "₹1200 night",
+        "price": "₹1200 night", 
         "link": "/mud"  
     },
     {
@@ -105,5 +105,243 @@
         "place_name": "Hotel The Silver Nest",
         "rating": "3.2",
         "price": "₹1725 night"
+    },
+
+
+
+
+
+    {
+        "location": "Amravati",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMuwwkTfc3QC-scXfK_tWDApJENNXlkgT6o70es=w253-h337-k-no",
+        "place_name": "JunJunwala Dharamshala",
+        "rating": "4.7",
+        "price": "₹400 night"
+    },
+    {
+        "location": "Amravati",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bd6a4bf0cbb55f3%3A0x6659172c51d5e94e!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOCLiSItR2E1sC7aqpd387gUTGh52VqOb6zaPXE%3Dw260-h175-n-k-no!5sdharamshala%20in%20amravati%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipOCLiSItR2E1sC7aqpd387gUTGh52VqOb6zaPXE&hl=en&sa=X&ved=2ahUKEwiinMn6joH-AhX_TGwGHfyzBBcQ7ZgBKAB6BAgOEAI",
+        "place_name": "Baba Hardasram Dharamshala",
+        "rating": "4.0",
+        "price": "free!"
+    },
+    {
+        "location": "Amravati",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bd6a4bf0cbb55f3%3A0x6659172c51d5e94e!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOCLiSItR2E1sC7aqpd387gUTGh52VqOb6zaPXE%3Dw260-h175-n-k-no!5sdharamshala%20in%20amravati%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipOCLiSItR2E1sC7aqpd387gUTGh52VqOb6zaPXE&hl=en&sa=X&ved=2ahUKEwiinMn6joH-AhX_TGwGHfyzBBcQ7ZgBKAB6BAgOEAI",
+        "place_name": "Sant Satramdas Dharamshala",
+        "rating": "3.9",
+        "price": "₹ 464"
+    },
+    {
+        "location": "Amravati",
+        "image": "https://cdn1.goibibo.com/voy_ing/t_g/8237c6c865c511e9bf7a0242ac110002.jpg",
+        "place_name": "Nankani Dharamshala",
+        "rating": "3.8",
+        "price": "free!"
+    },
+    {
+        "location": "Amravati",
+        "image": "https://i0.wp.com/www.nagpurpulse.com/wp-content/uploads/ng/2018/09/15109640294_00e2c2b9ae_o.jpg?w=575&ssl=1",
+        "place_name": "Shri Gurudev Seva Ashram",
+        "rating": "4.6",
+        "price": "free!"
+    },
+    {
+        "location": "Amravati",
+        "image": "Later",
+        "place_name": "Rajapeth Gurudwara",
+        "rating": "4.5",
+        "price": "free!"
+    },
+    {
+        "location": "Amravati",
+        "image": "Later",
+        "place_name": "Relish Residency",
+        "rating": "4.7",
+        "price": "₹ 550"
+    },
+    {
+        "location": "Amravati",
+        "image": "Later",
+        "place_name": "SBI Colony Mauli Recydency",
+        "rating": "4.1",
+        "price": "₹ 850"
+    },
+    {
+        "location": "Amravati",
+        "image": "Later",
+        "place_name": "Shree Ekvira Devi Sansthan Bhakat Niwas",
+        "rating": "4.6",
+        "price": "free!"
+    },
+
+
+
+
+    {
+        "location": "Wardha",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bd47f6adeac2fd5%3A0x5f37365da5eb9e42!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMzA2M5WBl_1l-s4LwqpGWgBNqNnnaB1pUWhKJx%3Dw390-h262-n-k-no!5sgurudwara%20in%20wardha%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipMzA2M5WBl_1l-s4LwqpGWgBNqNnnaB1pUWhKJx&hl=en&sa=X&ved=2ahUKEwie-ZSm6YP-AhWnR2wGHXF4ATEQ7ZgBKAB6BAgSEAI#",
+        "place_name": "Gursangat Gurudwara",
+        "rating": "4.4",
+        "price": "₹ 350"
+    },
+    {
+        "location": "Wardha",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bd47f6b6ef1e3dd:0xab38102108faaba7!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipOB-MkjS3xMQiX3UJPq4kOg_ZoTa2EhL7NIEvNN%3Dw390-h262-n-k-no!5sdharamshala+in+wardha+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipOB-MkjS3xMQiX3UJPq4kOg_ZoTa2EhL7NIEvNN&hl=en&sa=X&ved=2ahUKEwi_l9jd7oP-AhXPSGwGHS80BvwQ7ZgBKAB6BAgJEAI",
+        "place_name": "Bachcharaj Dharmshala",
+        "rating": "4.6",
+        "price": "₹ 300"
+    },
+    {
+        "location": "Wardha",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bd47f129764d101:0x1a3b7ceb0f4b28dc!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipPuF21gopJ1Rk4SFA1K6SPqo1yl2qeWuGlnIykX%3Dw390-h262-n-k-no!5sbhakta+niwas+in+wardha+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipPuF21gopJ1Rk4SFA1K6SPqo1yl2qeWuGlnIykX&hl=en&sa=X&ved=2ahUKEwisvobg8oP-AhURRmwGHZYSDFkQ7ZgBKAB6BAgTEAI",
+        "place_name": "Anand ashram bhojnalaya lodging & bording",
+        "rating": "3.9",
+        "price": "₹ 450"
+    },
+    {
+        "location": "Wardha",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bd48005fffa82e9:0x845ac0d681dbb511!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipNy9Oh7mI7ms2fl14U44OgfpNSk-5m2IpQ6FZCd%3Dw390-h262-n-k-no!5sashram+in+wardha+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipNy9Oh7mI7ms2fl14U44OgfpNSk-5m2IpQ6FZCd&hl=en&sa=X&ved=2ahUKEwjkg9fw9YP-AhXKSmwGHUtDD_MQ7ZgBKAB6BAgWEAI",
+        "place_name": "Mahatma Gandhi Ashram, Sevagram",
+        "rating": "4.6",
+        "price": "₹ 500"
+    },
+
+
+
+ 
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2b9a4c7a5a40d:0xbfc0a9cbf719cba7!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipOyIij-Qd0_Dt7R6PfL4nDS2sBgJrdvfDLUaX_q%3Dw260-h175-n-k-no!5syatri+niwas+in+pune+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipOyIij-Qd0_Dt7R6PfL4nDS2sBgJrdvfDLUaX_q&hl=en&sa=X&ved=2ahUKEwikpJqciIT-AhUh8DgGHd_NCMgQ7ZgBKAB6BAgTEAI",
+        "place_name": "Moraya Yatri Niwas",
+        "rating": "4.4",
+        "price": "₹ 240"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c9c241609a51:0x4051ae81d2d00771!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipPK-6Gd-GEJza5jbG7QeVHv4kdgdOC4B6O8drbZ%3Dw325-h218-n-k-no!5sbhakt+niwas+in+pune+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipPK-6Gd-GEJza5jbG7QeVHv4kdgdOC4B6O8drbZ&hl=en&sa=X&ved=2ahUKEwibgYnLioT-AhUO4jgGHXlcDCcQ7ZgBKAB6BAgSEAI",
+        "place_name": "Janhavi Bhakt Niwas",
+        "rating": "4.8",
+        "price": "₹ 550" 
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2bf8dd18cae69%3A0x42b342c584e355cb!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOuTG-lMq7tFyxroXDSKawpAJv6vJl0FpaJptkT%3Dw260-h175-n-k-no!5sbhakt%20niwas%20in%20pune%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipO_KoVqSMUrVOOweYNkBXLU3uvYPnpYiqGXefFk&hl=en&sa=X&ved=2ahUKEwjhvoPvi4T-AhX79DgGHd6-CRcQ7ZgBKAB6BAgGEAI#",
+        "place_name": "Shri Vasudev Niwas",
+        "rating": "4.8",
+        "price": "₹ 501"
+    },
+    {
+        "location": "Pune",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOrZatk-5YKnHsHunUsbUbUluf11L8MEeXvBhXc=w253-h189-k-no",
+        "place_name": "MAULI DARSHAN BHAKT NIWAS",
+        "rating": "4.2",
+        "price": "₹ 400"
+    },
+    {
+        "location": "Pune",
+        "image": "Later",
+        "place_name": "Janki Niwas",
+        "rating": "3.9",
+        "price": "₹ 350"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Ffastly.4sqi.net%2Fimg%2Fgeneral%2F558x200%2FVXIbvC96OX518WJ75YSeerMnZxEA3j4rp6sp4D5_5-Y.jpg&tbnid=1MwySzGw1fUDwM&vet=12ahUKEwjE36L0w4X-AhVf93MBHWHMBiIQMygCegQIARAl..i&imgrefurl=https%3A%2F%2Ffoursquare.com%2Fv%2Fshri-morarji-gokuldas-dharmashala%2F50230a04e4b02790d72d9974&docid=y6RMVuDoo9HFyM&w=558&h=200&q=Seth%20Morarji%20Gokuldas%20Dharamshala&ved=2ahUKEwjE36L0w4X-AhVf93MBHWHMBiIQMygCegQIARAl",
+        "place_name": "Seth Morarji Gokul Das Dharamshala",
+        "rating": "4.8",
+        "price": "₹ 400"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.hotelsinvrindavan.net%2Flogos%2Fgurudham_ashram_hotel.jpg&tbnid=0-uCq1H5cPVxTM&vet=12ahUKEwiWuLirxIX-AhVIx3MBHdXfCWIQMygDegUIARC9AQ..i&imgrefurl=https%3A%2F%2Fwww.hotelsinvrindavan.net%2Fgurudham-ashram-hotel-vrindavan.html&docid=1r-sIpXlCmbkHM&w=930&h=550&q=Gurudham%20Dharamshala&hl=en-US&ved=2ahUKEwiWuLirxIX-AhVIx3MBHdXfCWIQMygDegUIARC9AQ",
+        "place_name": "Gurudham Dharamshala",
+        "rating": "4.9",
+        "price": "₹ 350"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c011f79615ef%3A0x817dac1a2dc8b0eb!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOHg8naRn0z2b5JBFWQBlJ54YGA1T67-EACZ2GF%3Dw325-h218-n-k-no!5sShree%20Shwetambar%20Jain%20Temple%20Dadawadi%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipN-bcHGRMjbT-dTCZILE6AfSkB0SurD3uLtOnH6&hl=en&sa=X&ved=2ahUKEwiLk6uPxYX-AhW27zgGHeSLBo8Q7ZgBKAB6BAgTEAI#",
+        "place_name": "Shree Shwetambar Jain Temple Dadawadi",
+        "rating": "4.6",
+        "price": "₹ 450"
+    },
+    {
+        "location": "Pune",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOot0pRo2l_QY5HtRNhgXQVz-x_d_3c8nrxDH9L=w141-h118-n-k-no-nu",
+        "place_name": "Anand Darbar Dattanagar Sthanak",
+        "rating": "4.7",
+        "price": "₹ 300"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c05d05555555%3A0x7456c3a8171adec6!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNnkw3DkPhFJVDD-3H8tb-rsEfCRLJBTjtDcyyw%3Dw260-h175-n-k-no!5sdharamshala%20in%20pune%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNnkw3DkPhFJVDD-3H8tb-rsEfCRLJBTjtDcyyw&hl=en&sa=X&ved=2ahUKEwjlq_e6xoX-AhVLxDgGHQC-CkQQ7ZgBKAB6BAgSEAI#",
+        "place_name": "Sant Gadge Maharaj Akul Dharamshala",
+        "rating": "4.6",
+        "price": "₹ 100"
+    },
+    {
+        "location": "Pune",
+        "image": "https://4.bp.blogspot.com/-SyBvGEqon6M/U9IiKypUehI/AAAAAAAAfgM/090rDYkKoDI/s1600/IMG-20140725-WA0008-735014.jpg",
+        "place_name": "Nakoda Bhairav Dharamshala",
+        "rating": "4.6",
+        "price": "₹ 250"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c0409f5cec73:0x991fc841cb41e410!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipMuWfI3vNHwd1zNIHtZKH4uxapuyCdCoJs5FFoU%3Dw325-h218-n-k-no!5sdharamshala+in+pune+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipMuWfI3vNHwd1zNIHtZKH4uxapuyCdCoJs5FFoU&hl=en&sa=X&ved=2ahUKEwjF7_jlkIb-AhU14DgGHajzDzwQ7ZgBKAF6BAgQEAM",
+        "place_name": "Manmohan Parshwanath Dharmashala",
+        "rating": "4.7",
+        "price": "₹ 550"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c1ae0ab0b4c5:0xe5594d1e0ddc4231!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipNYu0F8NExIN_yK-UroymGSuz9m43lwIeQaf_5t%3Dw325-h218-n-k-no!5sgurudwara+in+pune+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipNYu0F8NExIN_yK-UroymGSuz9m43lwIeQaf_5t&hl=en&sa=X&ved=2ahUKEwidm6HBk4b-AhXe-jgGHRkXCf4Q7ZgBKAB6BAgTEAI",
+        "place_name": "Gurudwara Guru Nanak Darbar Pune Camp",
+        "rating": "4.6",
+        "price": "₹ 600"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2bf310c6303ab%3A0x7bd2f71ed54eeabb!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPBw6gpSju5-i6grgF-G03tQObYgLpVs2G4mi_E%3Dw260-h175-n-k-no!5sgurudwara%20in%20pune%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNeHdb3VbmXs5Cov4Y1vep1yIw2FyUYV-ZWThEx&hl=en&sa=X&ved=2ahUKEwiEn_fdlIb-AhV2nmMGHWFYAa4Q7ZgBKAB6BAgTEAI#",
+        "place_name": "Gurdwara Singh Sabha, Aundh",
+        "rating": "4.5",
+        "price": "₹ 200"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c0688fb6914b%3A0x8e86f23fa5869335!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOV0zuc45Uh3DqDezFCEZu9xzQ1p9_wXka_CnAT%3Dw162-h108-n-k-no!5sgurudwara%20in%20pune%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipOV0zuc45Uh3DqDezFCEZu9xzQ1p9_wXka_CnAT&hl=en&sa=X&ved=2ahUKEwih3J34lYb-AhUBxjgGHeH3ATIQ7ZgBKAJ6BAgVEAQ#",
+        "place_name": "Gurudwara Guru Singh Sabha",
+        "rating": "4.6",
+        "price": "₹ 250"
+    },
+    {
+        "location": "Pune",
+        "image": "Later",
+        "place_name": "Gurudwara Dasmesh Darbar",
+        "rating": "4.4",
+        "price": "₹ 325"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c73afc7679df:0x535148010dcb72c4!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipO-LQ5wmSLMgau-K7lN_o8YtYC_FGLCCR8Z-Mxw%3Dw260-h175-n-k-no!5sgurudwara+in+pune+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipO-LQ5wmSLMgau-K7lN_o8YtYC_FGLCCR8Z-Mxw&hl=en&sa=X&ved=2ahUKEwjOjO-el4b-AhXSwjgGHQPJBgMQ7ZgBKAB6BAgGEAI",
+        "place_name": "Gurudwara Sahib | Training Battalion-II | Dighi Camp",
+        "rating": "4.6",
+        "price": "₹ 250"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x3bc2c0a9856da04b:0x3c24f9b82b99ddb5!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipNWPlTUJSJDCXVYiQxwq7tVp4XesV3oFX6v8vUY%3Dw260-h175-n-k-no!5sgurudwara+in+pune+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipNWPlTUJSJDCXVYiQxwq7tVp4XesV3oFX6v8vUY&hl=en&sa=X&ved=2ahUKEwiRzqPLl4b-AhUJzqACHQM7AcYQ7ZgBKAB6BAgOEAI",
+        "place_name": "Shri Guru Singh Sabha, Khadki ",
+        "rating": "4.7",
+        "price": "₹ 250"
+    },
+    {
+        "location": "Pune",
+        "image": "https://www.india-tours.com/images/festivals/gurudwara-nanaksar-jagraon/gurudwara-nanaksar1.jpg",
+        "place_name": "Gurudwara Nanaksar",
+        "rating": "4.6",
+        "price": "₹ 150"
     }
+    
 ]

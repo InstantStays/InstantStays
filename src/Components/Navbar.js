@@ -9,7 +9,7 @@ const Navbar = () => {
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
   if (isLoading) {
-    return <div>Loading ...</div>;
+    return <></>;
   }
   return (
     <>
@@ -77,6 +77,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 const NavbarMenu = styled.div`
   position: relative;
   height: 80px;
