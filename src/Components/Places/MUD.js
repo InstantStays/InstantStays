@@ -17,13 +17,6 @@ const MUD = () => {
     setComments([...comments, newComment]);
   };
 
-  const dummy = async () => {
-    // await writeJsonFile("CARD_OUTER_INFO.json", { nagpur: true });
-    console.log(
-      'await writeJsonFile("CARD_OUTER_INFO.json", { nagpur: true });'
-    );
-  };
-
   return (
     <>
       <Container>

@@ -6,7 +6,12 @@ import { CiLock } from "react-icons/ci";
 const LoginText = (props) => {
   return (
     <>
-      <Container></Container>
+      {/* <Container>
+        <label htmlFor="">{props.username}</label>
+        <input type="text" />
+        <label htmlFor="">{props.username}</label>
+        <input type="text" />
+      </Container> */}
     </>
   );
 };
@@ -14,10 +19,10 @@ const LoginText = (props) => {
 export default LoginText;
 const Container = styled.div`
   color: #fff;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   height: 100%;
   width: 80%;
   margin: 4rem auto;

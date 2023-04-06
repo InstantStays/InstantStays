@@ -1,16 +1,38 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiFillCloseCircle } from "react-icons/ai";
 import styled from "styled-components";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
+import { app } from "..//firebase";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+
+const auth = getAuth(app);
 
 const Navbar = () => {
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
-  const { user, isAuthenticated, isLoading } = useAuth0();
-  if (isLoading) {
-    return <></>;
-  }
+  // const { loginWithRedirect } = useAuth0();
+  // const { logout } = useAuth0();
+  // const { user, isAuthenticated, isLoading } = useAuth0();
+  // if (isLoading) {
+  //   return <></>;
+  // }
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // yes you are logged in
+        setUser(user);
+        console.log("You are logged in");
+      } else {
+        // user logged out
+        console.log("You are logged out");
+        setUser(null);
+      }
+    });
+  }, []);
+
   return (
     <>
       <NavbarMenu>
@@ -38,10 +60,22 @@ const Navbar = () => {
         <AiFillCloseCircle
           style={{ color: "#000", transform: "scale(2)", display: "none" }}
         ></AiFillCloseCircle>
-        {/* username: motu || email: tumanemohit@gmail.com || password: Mohittumane@  */}
-        {/* username: chinmaynirwan || email: chini123@gmail.com || password: Chinimay10@  */}
         <LoginSignUp>
-          {isAuthenticated && (
+          {user === null ? (
+            <div>
+              <Link to="/login" id="login">
+                <Login>Login</Login>
+              </Link>
+              <Link to="/signup" id="signup">
+                <Signup>Sign Up</Signup>
+              </Link>
+            </div>
+          ) : (
+            <button onClick={() => signOut(auth)} id="logout">
+              Log me out
+            </button>
+          )}
+          {/* {isAuthenticated && (
             <>
               <Info>
                 <img src={user.picture} alt={user.name} />
@@ -62,12 +96,12 @@ const Navbar = () => {
             <button id="login" onClick={() => loginWithRedirect()}>
               Log In
             </button>
-          )}
+          )} */}
 
           {/* <Link to="/login" id="login">
             <Login>Login</Login>
-          </Link> */}
-          {/* <Link to="/signup" id="signup">
+          </Link>
+          <Link to="/signup" id="signup">
             <Signup>Sign Up</Signup>
           </Link> */}
         </LoginSignUp>
@@ -143,7 +177,9 @@ const NavbarLinks = styled.div`
   }
 `;
 const LoginSignUp = styled.div`
+div{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -152,22 +188,7 @@ const LoginSignUp = styled.div`
     color: #000;
     font-weight: bold;
   }
-  #login {
-    cursor: pointer;
-    padding: 10px 1.4rem;
-    border: 2px solid #000;
-    border-radius: 20px;
-    transition: all 0.2s linear;
-    font-weight: bold;
-    background-color: transparent;
-    width: 120px;
-    :focus {
-      border: 2px solid #fff;
-    }
-    :hover {
-      background-color: #000;
-      color: #fff;
-    }
+}
   }
   #logout {
     cursor: pointer;
@@ -185,11 +206,17 @@ const LoginSignUp = styled.div`
       background-color: red;
       border: 2px solid red;
       color: #fff;
+      box-shadow: 0 1px 5px 0 red;
     }
   }
+  
 `;
-const Signup = styled.div``;
-const Login = styled.div``;
+const Login = styled.div`
+  border: 2px solid #000;
+  padding: 4px 10px;
+  border-radius: 10px;
+`;
+const Signup = styled(Login)``;
 const Info = styled.div`
   border: 2px solid #7d7d7d;
   border-radius: 10px;

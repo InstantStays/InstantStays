@@ -1,13 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { BsGoogle } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const SignupText = (props) => {
   return (
     <>
-      <h1>{props.heading}</h1>
+      {/* <h1>{props.heading}</h1>
       <p style={{ marginBottom: "1rem" }}>{props.text}</p>
       <SignUpGoogle>
         <BsGoogle />
@@ -42,7 +39,7 @@ const SignupText = (props) => {
             <Link to="/login">Login</Link>
           </span>
         </p>
-      </AlreadyMemberLogin>
+      </AlreadyMemberLogin> */}
     </>
   );
 };
@@ -113,7 +110,6 @@ const InputText = styled.div`
   input[type="password"]:focus {
     // border: 2px solid #ff7f25;
     border: 2px solid #000;
-    width: 110%;
   }
 `;
 

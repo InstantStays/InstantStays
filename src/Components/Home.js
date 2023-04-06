@@ -1,12 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { BsHouseDoorFill } from "react-icons/bs";
 import HeroCard from "./HeroCard";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
+import { app } from "..//firebase";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+
+const auth = getAuth(app);
 
 const Home = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  // const { user, isAuthenticated, isLoading } = useAuth0();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // yes you are logged in
+        setUser(user);
+        console.log("You are logged in");
+      } else {
+        // user logged out
+        console.log("You are logged out");
+        setUser(null);
+      }
+    });
+  }, []);
+
   return (
     <>
       <Container>
@@ -19,7 +39,7 @@ const Home = () => {
                 placeholder="Search destination..."
               />
             </Link>
-            {isAuthenticated ? (
+            {user !== null ? (
               <Link
                 to="/register"
                 style={{
@@ -38,8 +58,36 @@ const Home = () => {
             ) : (
               <div></div>
             )}
+            {/* {isAuthenticated ? (
+              <Link 
+                to="/register"
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  textDecoration: "none",
+                }}
+              >
+                <Btn>
+                  <button>
+                    <BsHouseDoorFill />
+                    Register Place
+                  </button>
+                </Btn>
+              </Link>
+            ) : (
+              <div></div>
+            )} */}
           </RowOne>
-          {isAuthenticated ? (
+          {user !== null ? (
+            <RowTwo>
+              <h2>Hello {user.email}</h2>
+            </RowTwo>
+          ) : (
+            <RowTwo>
+              <h2>Hello Guest</h2>
+            </RowTwo>
+          )}
+          {/* {isAuthenticated ? (
             <RowTwo>
               <h2>Hello {user?.name}</h2>
             </RowTwo>
@@ -47,7 +95,7 @@ const Home = () => {
             <RowTwo>
               <h2>Hello Guest</h2>
             </RowTwo>
-          )}
+          )} */}
           {/*<RowTwo>
             <h2>Hello </h2>
           </RowTwo>*/}
