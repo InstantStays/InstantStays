@@ -1,21 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import innerData from "./MUD.json";
-import { useAuth0 } from "@auth0/auth0-react";
-// import { writeJsonFile } from "write-json-file";
+import { app } from "../../firebase";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { collection, orderBy, query, onSnapshot } from "firebase/firestore";
+import { db } from "../../firebase";
+import Comment from "./Comment";
+import GetComment from "./GetComment";
+import { Link } from "react-router-dom";
+
+const auth = getAuth(app);
+// const firestore = getFirestore(app);
 
 const MUD = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
-  const [comments, setComments] = useState([]);
+  // const { user, isAuthenticated, isLoading } = useAuth0();
+  const [user, setUser] = useState(null);
+  const [comments, setComment] = useState([]);
+  useEffect(() => {
+    const commentRef = collection(db, "Comments");
+    const q = query(commentRef, orderBy("commentedOn", "desc"));
+    onSnapshot(q, (snapshot) => {
+      const comment = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setComment(comment);
+      console.log(comment);
+    });
+  }, []);
 
-  const handleSubmit = () => {
-    const newComment = {
-      id: Date.now(),
-      text: "",
-      editable: false,
-    };
-    setComments([...comments, newComment]);
-  };
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // yes you are logged in
+        setUser(user);
+        console.log("You are logged in");
+      } else {
+        // user logged out
+        console.log("You are logged out");
+        setUser(null);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -66,18 +92,22 @@ const MUD = () => {
                   <h2>Write your own review</h2>
                 </RowEight>
                 <Review>
-                  {isAuthenticated ? (
-                    <WriteReview>
-                      {/* <TodoWrapper place="mud" /> */}
-                    </WriteReview>
-                  ) : (
+                  {user === null ? (
                     <div>
-                      {" "}
-                      <strong style={{ color: "orange" }}>Login</strong> to
-                      write a comment!
+                      <strong>
+                        <Link to="/login" style={{ color: "orange" }}>
+                          Login
+                        </Link>{" "}
+                      </strong>{" "}
+                      to write a comment!
                     </div>
+                  ) : (
+                    <WriteReview>
+                      <Comment />
+                    </WriteReview>
                   )}
                 </Review>
+                <GetComment />
               </InnerContainer>
             </>
           );
@@ -178,6 +208,9 @@ const RowFive = styled(RowOne)`
 `;
 const RowSix = styled(RowThree)`
   width: 50%;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
 `;
 const Grid = styled.div`
   display: grid;
@@ -187,5 +220,9 @@ const RowSeven = styled(RowThree)``;
 const RowEight = styled.div`
   padding: 0.75rem 0;
 `;
-const Review = styled.div``;
+const Review = styled.div`
+  a {
+    text-decoration: none;
+  }
+`;
 const WriteReview = styled.div``;

@@ -4,10 +4,6 @@ import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
 import OpenCardData from "./CARD_OUTER_INFO.json";
-import Autocomplete from "react-autocomplete";
-// import placeinfo from "./PLACE_INFO.json";
-// import Autocomplete from "../AutoComplete";
-//https://jsonplaceholder.typicode.com/posts
 
 const SearchBar = () => {
   // for search box suggestions
@@ -59,40 +55,36 @@ const SearchBar = () => {
               onChange={handleFilter}
             />
           </SearchBarInput>
-          <Dropdown className="dropdown">
-            <button></button>
-          </Dropdown>
+          <Dropdown className="dropdown"></Dropdown>
           {filteredData.length != 0 && (
             <DataShow>
               {filteredData.map((value, key) => {
                 return (
-                  <Link to={value.link} target="_blank">
+                  <Link
+                    to={value.link}
+                    target="_blank"
+                    title="Click to open on new tab"
+                  >
                     <SearchedCard>
-                      {/* <p>{value.title}</p> */}
                       <img src={value.image} alt="" />
                       <Content>
                         <Row>
                           <h3>{value.place_name}</h3>
-                          <div
-                            style={{
-                              display: "flex",
-                              gap: "0.75rem",
-                              alignItems: "center",
-                              fontSize: "1.4rem",
-                            }}
-                          >
-                            <BsFillStarFill
-                              style={{ transform: "scale(1.1)" }}
-                            />
-                            <strong>{value.rating}</strong>
-                          </div>
                         </Row>
-                        {/* <RowTwo>
-                          <strong>{value.rate}</strong>
-                        </RowTwo> */}
                       </Content>
                       <Price>
-                        <h3>{value.price}</h3>
+                        <h2>{value.price}</h2>
+                        <div
+                          style={{
+                            display: "flex",
+                            gap: "0.75rem",
+                            alignItems: "center",
+                            fontSize: "1.4rem",
+                          }}
+                        >
+                          <BsFillStarFill style={{ transform: "scale(1.1)" }} />
+                          <strong>{value.rating}</strong>
+                        </div>
                       </Price>
                     </SearchedCard>
                   </Link>
@@ -184,10 +176,33 @@ const DataShow = styled.div`
     text-decoration: none;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    transition: all 0.3s ease-out;
+    border-radius: 20px;
+    transition: all 250ms ease;
+    z-index: 99;
     :hover {
-      transform: scale(1.04);
+      transform: translate(-4px, -4px);
+      // box-shadow: 4px 2px 15px 0px rgba(255, 255, 255, 0.7);
+    }
+    position: relative;
+    ::after {
+      content: "";
+      position: absolute;
+      width: 99%;
+      height: 99%;
+      border: 2px solid #fff;
+      top: 0;
+      left: 0;
+      border-radius: 20px;
+      transition: all 250ms ease;
+      z-index: -1;
+    }
+    :hover::after {
+      width: 101%;
+      height: 100%;
+      border-radius: 25px;
+      top: 2px;
+      left: 0px;
+      box-shadow: 2px 2px 15px 0px rgba(255, 255, 255, 0.7);
     }
   }
   @media screen and (max-width: 1270px) {
@@ -216,7 +231,7 @@ const SearchedCard = styled.div`
     object-fit: fill;
   }
   :hover {
-    box-shadow: 0 0 20px 5px #fff;
+    // box-shadow: 2px 2px 20px 0px rgba(255, 255, 255, 0.7);
   }
   @media screen and (max-width: 406px) {
     width: 300px;
@@ -252,5 +267,8 @@ const RowTwo = styled.div`
   }
 `;
 const Price = styled.div`
-  margin: 0.75rem 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 `;

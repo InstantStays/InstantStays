@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { BsFillCalendarCheckFill } from "react-icons/bs";
-import { BsCashCoin } from "react-icons/bs";
 
 const ServiceCard = (props, { Icon }) => {
   return (

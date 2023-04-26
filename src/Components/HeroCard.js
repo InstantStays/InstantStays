@@ -3,35 +3,37 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { BsStar } from "react-icons/bs";
 import data from "./data";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from "react-responsive-carousel";
 
-const HeroCard = (props) => {
+const HeroCard = () => {
   return (
     <>
-      <Container>
+      <Container id="hero-card">
         <Cards>
           <Card>
             {data.cardData.map((item, index) => {
               return (
                 <div id="maindiv">
                   <Link to="/" target="_blank">
-                    <CardBody>
+                    <CardBody
+                      style={{
+                        border: "2px solid #fff",
+                        borderRadius: "20px",
+                      }}
+                    >
                       <img src={item.img} alt="" />
                       <div className="info">
                         <RowOne>
                           <h2>{item.title}</h2>
-                          <p
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                            }}
-                          >
-                            <BsStar />
-                            <strong style={{ marginLeft: "10px" }}>4.3</strong>
-                          </p>
                         </RowOne>
-                        <p>Card Description</p>
+                        <p
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
+                          <BsStar />
+                          <strong>{item.rating}</strong>
+                        </p>
                       </div>
                     </CardBody>
                   </Link>
@@ -49,6 +51,9 @@ export default HeroCard;
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
+  @media screen and (max-width: 440px) {
+    width: 100%;
+  }
 `;
 const Cards = styled.div``;
 const Card = styled.div`
@@ -59,13 +64,35 @@ const Card = styled.div`
   justify-content: center;
   gap: 2rem;
   #maindiv {
-    // overflow: hidden;
     transition: all 250ms ease;
+    // border: 2px solid #fff;
     border-radius: 20px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
     :hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px 0 #fff;
+      // box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.7);
+      box-shadow: 2px 2px 15px 0px rgba(255, 255, 255, 0.7);
+      transform: translate(-4px, -4px);
     }
+    /* ::after {
+      content: "";
+      position: absolute;
+      width: 99%;
+      height: 99%;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      transition: all 250ms ease;
+      z-index: -1;
+    }
+    :hover::after {
+      width: 101%;
+      height: 100%;
+      top: 2px;
+      left: 0px;
+    }*/
   }
 `;
 const CardBody = styled.div`
@@ -73,13 +100,14 @@ const CardBody = styled.div`
   // height: 270px;
   height: 380px;
   width: 300px;
-  border: 2px solid grey;
-  border-radius: 10px;
+  border: 2px solid transparent;
+  border-radius: 20px;
   overflow: hidden;
 
   img {
     width: 100%;
-    opacity: 0.8;
+    height: 75%;
+    opacity: 1;
   }
   .info {
     position: absolute;
@@ -89,13 +117,14 @@ const CardBody = styled.div`
     left: 0%;
     p {
       margin: 0 1rem;
+      gap: 10px;
     }
   }
 `;
 const RowOne = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
+  margin: 5px 1rem;
 `;
 
 /* <div>
