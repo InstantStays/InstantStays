@@ -39,7 +39,7 @@ const Footer = () => {
                     transform: "scale(1.4)",
                   }}
                 />
-                9524755711
+                +91 9730556126
               </div>
             </Link>
             <Link>
@@ -49,7 +49,7 @@ const Footer = () => {
                     transform: "scale(1.4)",
                   }}
                 />
-                vednande10@gmail.com
+                tumanemohit@gmail.com
               </div>
             </Link>
           </div>

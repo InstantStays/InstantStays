@@ -53,7 +53,7 @@ const SearchBar = () => {
             <input
               type="text"
               value={value}
-              placeholder="Enter city..."
+              placeholder="Search your city here..."
               onChange={handleFilter}
             />
           </SearchBarInput>
@@ -63,9 +63,23 @@ const SearchBar = () => {
               direction="left"
               speed={75}
               pauseOnHover
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
-              InstantStays allows you to search rooms from Nagpur, Wardha,
-              Amravati, Pune, Kolhapur and Tuljapur
+              InstantStays allows you to search rooms from
+              <strong
+                style={{
+                  marginLeft: "5px",
+                  color: "rgba(235, 101, 7, 1)",
+                  textShadow: "none",
+                  fontSize: "1.4rem",
+                }}
+              >
+                Nagpur, Wardha, Amravati, Pune, Kolhapur and Tuljapur
+              </strong>
             </Marquee>
           </Dropdown>
           {filteredData.length != 0 && (
@@ -149,6 +163,7 @@ const SearchBarInput = styled.div`
   padding-left: 5px;
   input {
     width: 80%;
+    height: 50px;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -159,7 +174,8 @@ const SearchBarInput = styled.div`
     transition: all 0.3s ease;
     ::placeholder {
       color: #000;
-      padding-left: 5px;
+      padding: 2px 0 0 5px;
+      font-size: 1rem;
     }
   }
   input:focus {

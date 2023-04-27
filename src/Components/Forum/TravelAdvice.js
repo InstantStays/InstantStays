@@ -157,7 +157,7 @@ const InnerContainer = styled.div`
   width: 80%;
   border: 2px solid #fff;
   border-radius: 20px;
-  padding: 0.95rem 0 0 0;
+  padding: 0.95rem 0 0 0; 
   transition: all 300ms linear;
   @media screen and (max-width: 560px) {
     width: 100%;

@@ -15,10 +15,10 @@ const ForumMain = () => {
           </Left>
           <Right>
             <div id="box">
-              <h2>Registered Users: 20</h2>
+              <h2>Registered Users: 7</h2>
               <h2>Forums: 4</h2>
-              <h2>Topics: 20</h2>
-              <h2>Replies: 20</h2>
+              <h2>Topics: 7</h2>
+              <h2>Replies: 5</h2>
             </div>
           </Right>
         </ContOne>
