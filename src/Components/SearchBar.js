@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
 import OpenCardData from "./CARD_OUTER_INFO.json";
+import Marquee from "react-fast-marquee";
 
 const SearchBar = () => {
   // for search box suggestions
@@ -55,7 +56,17 @@ const SearchBar = () => {
               onChange={handleFilter}
             />
           </SearchBarInput>
-          <Dropdown className="dropdown"></Dropdown>
+          <Dropdown className="dropdown">
+            <Marquee
+              className="marquee"
+              direction="left"
+              speed={75} 
+              pauseOnHover
+            >
+              InstantStays allows you to search rooms from Nagpur, Wardha,
+              Amravati, Pune, Kolhapur and Tuljapur
+            </Marquee>
+          </Dropdown>
           {filteredData.length != 0 && (
             <DataShow>
               {filteredData.map((value, key) => {
@@ -163,10 +174,18 @@ const SearchBarInput = styled.div`
     gap: 1.5rem;
   }
 `;
-const Dropdown = styled.div``;
+const Dropdown = styled.div`
+  color: #fff;
+  .marquee {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    text-shadow: 1px 1px 5px #7d7d7d;
+  }
+`;
 const DataShow = styled.div`
   display: grid;
-  margin: 4rem 0;
+  margin: 2rem 0 4rem 0;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   gap: 4rem 1rem;

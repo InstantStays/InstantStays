@@ -16,12 +16,14 @@ import { useState, useEffect } from "react";
 import ForumMain from "./Components/Forum/ForumMain";
 import TravelAdvice from "./Components/Forum/TravelAdvice";
 import ReachManali from "./Components/Forum/Questions/ReachManali";
+import Footer from "./Components/Footer";
 
 /********** PLACES LINK GOES HERE **********/
 import MUD from "./Components/Places/MUD";
 import SVVSB from "./Components/Places/SVVSB";
 import HJD from "./Components/Places/HJD";
 import WhichBetterNainiManali from "./Components/Forum/Questions/WhichBetterNainiManali";
+import Team from "./Components/Team";
 // import SSDSVS from "./Components/Demo Places/SSDSVS";
 
 const auth = getAuth(app);
@@ -54,6 +56,7 @@ function App() {
             path="/whichbetternainimanali"
             element={<WhichBetterNainiManali />}
           ></Route>
+          <Route path="/team" element={<Team />}></Route>
 
           {/*********  PLACES LINK GOES HERE *********/}
           <Route path="/mud" element={<MUD />}></Route>
@@ -61,6 +64,7 @@ function App() {
           <Route path="/hjd" element={<HJD />}></Route>
           {/* <Route path="/ssdsvs" element={<SSDSVS />}></Route> */}
         </Routes>
+        <Footer />
       </Router>
     </>
   );

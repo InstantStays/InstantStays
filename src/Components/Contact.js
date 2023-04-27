@@ -240,11 +240,12 @@ const InputOne = styled.div`
     font-size: 0.9rem;
     :focus {
       border: 2px solid #fff;
+      background-color: rgba(0, 0, 0, 0.5);
     }
     ::placeholder {
       font-weight: 600;
       color: #e0dfdf;
-      letter-spacing: 1.1px;
+      letter-spacing: 1.05px;
     }
   }
 `;
