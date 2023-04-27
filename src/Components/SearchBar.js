@@ -5,6 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
 import OpenCardData from "./CARD_OUTER_INFO.json";
 import Marquee from "react-fast-marquee";
+import Footer from "./Footer";
 
 const SearchBar = () => {
   // for search box suggestions
@@ -60,7 +61,7 @@ const SearchBar = () => {
             <Marquee
               className="marquee"
               direction="left"
-              speed={75} 
+              speed={75}
               pauseOnHover
             >
               InstantStays allows you to search rooms from Nagpur, Wardha,
@@ -104,6 +105,7 @@ const SearchBar = () => {
             </DataShow>
           )}
         </MainContainer>
+        <Footer />
       </Container>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Team = () => {
   return (
@@ -207,6 +208,7 @@ const Team = () => {
             </Card>
           </Cards>
         </InnerContainer>
+        <Footer />
       </Container>
     </>
   );

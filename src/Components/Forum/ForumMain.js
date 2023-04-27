@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BsMessenger } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 const ForumMain = () => {
   return (
@@ -83,6 +84,7 @@ const ForumMain = () => {
           </table>
         </ContTwo>
       </Container>
+      <Footer />
     </>
   );
 };

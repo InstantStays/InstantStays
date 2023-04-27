@@ -16,7 +16,6 @@ import { useState, useEffect } from "react";
 import ForumMain from "./Components/Forum/ForumMain";
 import TravelAdvice from "./Components/Forum/TravelAdvice";
 import ReachManali from "./Components/Forum/Questions/ReachManali";
-import Footer from "./Components/Footer";
 
 /********** PLACES LINK GOES HERE **********/
 import MUD from "./Components/Places/MUD";
@@ -64,7 +63,7 @@ function App() {
           <Route path="/hjd" element={<HJD />}></Route>
           {/* <Route path="/ssdsvs" element={<SSDSVS />}></Route> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

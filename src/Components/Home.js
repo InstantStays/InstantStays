@@ -7,6 +7,7 @@ import HeroCard from "./HeroCard";
 import { app } from "..//firebase";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Footer from "./Footer";
 
 const auth = getAuth(app);
 
@@ -108,6 +109,7 @@ const Home = () => {
           </RowThree>
         </MainContainer>
       </Container>
+      <Footer />
     </>
   );
 };
@@ -272,12 +274,12 @@ const RowTwo = styled.div`
       font-size: 2rem;
     }
   }
-  @media screen and (max-width: 599px) { 
+  @media screen and (max-width: 599px) {
     padding-left: 2rem;
-    h2 { 
-      font-size: 1.8rem;  
-    }  
-  } 
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
   @media screen and (max-width: 500px) {
     h2 {
       font-size: 1.5rem;

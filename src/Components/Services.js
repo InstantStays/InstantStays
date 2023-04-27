@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BsFillStopwatchFill } from "react-icons/bs";
 import { BsCashCoin } from "react-icons/bs";
+import Footer from "./Footer";
 
 const Services = () => {
   return (
@@ -95,6 +96,7 @@ const Services = () => {
           </Cards>
         </InnerContainer>
       </Container>
+      <Footer />
     </>
   );
 };

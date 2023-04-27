@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { app } from "../firebase";
+import Footer from "./Footer";
 
 const firestore = getFirestore(app);
 const auth = getAuth(app);
@@ -97,6 +98,7 @@ const Contact = () => {
           </Btn>
         </InnerContainer>
       </Container>
+      <Footer />
     </>
   );
 };

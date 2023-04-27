@@ -5,6 +5,7 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { app } from "../../firebase";
 import { useEffect, useState } from "react";
+import Footer from "../Footer";
 
 const TravelAdvice = () => {
   const firestore = getFirestore(app);
@@ -124,6 +125,7 @@ const TravelAdvice = () => {
           </div>
         )}
       </Container>
+      <Footer />
     </>
   );
 };
