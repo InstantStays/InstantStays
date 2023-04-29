@@ -1,7 +1,3 @@
-import img1 from "../Images/img1.jpg";
-import img2 from "../Images/img2.png";
-import img3 from "../Images/img3.png";
-
 const data = {
   cardData: [
     {
@@ -10,6 +6,7 @@ const data = {
       title: "Gaurav Guest House",
       location: "Nagpur",
       rating: "4.0",
+      link: "/ggh",
     },
     {
       id: 2,
@@ -17,6 +14,7 @@ const data = {
       title: "Rajapeth Gurudwara",
       location: "Amravati",
       rating: "4.5",
+      link: "/",
     },
     {
       id: 3,

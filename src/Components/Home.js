@@ -5,7 +5,7 @@ import { BsHouseDoorFill } from "react-icons/bs";
 import HeroCard from "./HeroCard";
 // import { useAuth0 } from "@auth0/auth0-react";
 import { app } from "..//firebase";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Footer from "./Footer";
 
@@ -33,38 +33,6 @@ const Home = () => {
   return (
     <>
       <Container>
-        {/* <NavbarLinksMobile id="navbarLinksMobile">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/forummain">Forums</Link>
-            </li>
-          </ul>
-          <LoginSignUp>
-            {user === null ? (
-              <div>
-                <Link to="/login" id="login">
-                  <Login>Login</Login>
-                </Link>
-                <Link to="/signup" id="signup">
-                  <Signup>Sign Up</Signup>
-                </Link>
-              </div>
-            ) : (
-              <button onClick={() => signOut(auth)} className="btn" id="logout">
-                Log me out
-              </button>
-            )}
-          </LoginSignUp>
-        </NavbarLinksMobile> */}
         <MainContainer id="mainContainer">
           <RowOne>
             <Link to="/searchbar" id="searchbar">
@@ -228,7 +196,7 @@ const Btn = styled.div`
     background-color: #fff;
     border: 2px solid #fff;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     font-weight: bold;
     position: relative;

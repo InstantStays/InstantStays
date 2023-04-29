@@ -22,7 +22,13 @@ import MUD from "./Components/Places/MUD";
 import SVVSB from "./Components/Places/SVVSB";
 import HJD from "./Components/Places/HJD";
 import WhichBetterNainiManali from "./Components/Forum/Questions/WhichBetterNainiManali";
+import GGH from "./Components/Places/GGH";
+import SVN from "./Components/Places/SVN";
+import PG from "./Components/Places/PG";
+
 import Team from "./Components/Team";
+import FoodAndDrinks from "./Components/Forum/FoodAndDrinks";
+import GGSS from "./Components/Places/GGSS";
 // import SSDSVS from "./Components/Demo Places/SSDSVS";
 
 const auth = getAuth(app);
@@ -50,6 +56,7 @@ function App() {
           <Route path="/confirmation" element={<Confirmation />}></Route>
           <Route path="/forummain" element={<ForumMain />}></Route>
           <Route path="/traveladvice" element={<TravelAdvice />}></Route>
+          <Route path="/foodanddrinks" element={<FoodAndDrinks />}></Route>
           <Route path="/reachmanali" element={<ReachManali />}></Route>
           <Route
             path="/whichbetternainimanali"
@@ -61,6 +68,10 @@ function App() {
           <Route path="/mud" element={<MUD />}></Route>
           <Route path="/svvsb" element={<SVVSB />}></Route>
           <Route path="/hjd" element={<HJD />}></Route>
+          <Route path="/ggh" element={<GGH />}></Route>
+          <Route path="/svn" element={<SVN />}></Route>
+          <Route path="/pg" element={<PG />}></Route>
+          <Route path="/ggss" element={<GGSS />}></Route>
           {/* <Route path="/ssdsvs" element={<SSDSVS />}></Route> */}
         </Routes>
         {/* <Footer /> */}

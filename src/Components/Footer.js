@@ -88,6 +88,35 @@ const Footer = () => {
           </div>
         </footer>
       </Container>
+      <div
+        className="mwl"
+        style={{
+          background: "#000",
+          color: "#fff",
+          padding: "0.1rem 0",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <h3
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          Made with
+          <img
+            src="/Images/heart.png"
+            style={{
+              transform: "scale(0.5)",
+            }}
+            alt=""
+          />
+          by Ved Nande
+        </h3>
+      </div>
     </>
   );
 };
@@ -98,10 +127,24 @@ const Container = styled.div`
   color: #fff;
   padding: 4rem;
 
+  @media screen and (max-width: 1000px) {
+    padding: 2rem 0;
+  }
+
   #footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
 
     .left {
       display: flex;
@@ -110,10 +153,18 @@ const Container = styled.div`
       width: 25%;
       max-width: 33%;
 
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        max-width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 3px solid #fff;
+      }
+
       a {
         text-decoration: none;
         color: #fff;
         border: 2px solid #fff;
+        border-radius: 20px;
         width: fit-content;
         padding: 10px;
         font-weight: 700;
@@ -121,6 +172,8 @@ const Container = styled.div`
         :hover {
           background-color: #fff;
           color: #000;
+          transform: translate(-4px, -4px);
+          box-shadow: rgba(255, 255, 255, 0.7) 2px 2px 15px 0;
         }
       }
 
@@ -129,9 +182,19 @@ const Container = styled.div`
         margin: 0 0 10px 0;
         font-size: 1.6rem;
         letter-spacing: 1.1px;
+        @media screen and (max-width: 1400px) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 1.6rem;
+        }
       }
+
       p {
         letter-spacing: 1.02px;
+        @media screen and (max-width: 1400px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -139,6 +202,13 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        max-width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 3px solid #fff;
+      }
 
       a {
         text-decoration: none;
@@ -167,6 +237,12 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 1.4rem;
+
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        max-width: 100%;
+        padding-bottom: 2rem;
+      }
 
       a {
         text-decoration: none;

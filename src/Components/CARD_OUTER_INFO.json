@@ -99,7 +99,8 @@
         "image": "https://images.oyoroomscdn.com/uploads/hotel_image/199736/large/8fd6b6dbfe10e0ad.jpg",
         "place_name": "Gaurav Guest House",
         "rating": "3.2",
-        "price": "₹590 night"
+        "price": "₹590 night",
+        "link":"/ggh"
     },
     {
         "location": "Nagpur",

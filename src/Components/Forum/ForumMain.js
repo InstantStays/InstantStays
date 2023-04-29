@@ -53,7 +53,7 @@ const ForumMain = () => {
                 </td>
                 <td data-label="Amount">2</td>
                 <td data-label="Period">
-                  <Link to="/">
+                  <Link to="/foodanddrinks">
                     <button>Discuss</button>
                   </Link>
                 </td>
